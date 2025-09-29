@@ -1,9 +1,16 @@
 import streamlit as st
 import os
-from app.utils.save_docs import save_docs_to_vectordb
-from app.utils.session_state import initialize_session_state_variables
-from app.utils.prepare_vectordb import get_vectorstore
-from app.utils.chatbot import chat
+import sys
+
+# Ensure this file's directory (the app folder) is importable on Streamlit Cloud
+CURRENT_DIR = os.path.dirname(__file__)
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
+
+from utils.save_docs import save_docs_to_vectordb
+from utils.session_state import initialize_session_state_variables
+from utils.prepare_vectordb import get_vectorstore
+from utils.chatbot import chat
 
 class ChatApp:
     """
