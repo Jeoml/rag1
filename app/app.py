@@ -1,9 +1,9 @@
 import streamlit as st
 import os
-from utils.save_docs import save_docs_to_vectordb
-from utils.session_state import initialize_session_state_variables
-from utils.prepare_vectordb import get_vectorstore
-from utils.chatbot import chat
+from app.utils.save_docs import save_docs_to_vectordb
+from app.utils.session_state import initialize_session_state_variables
+from app.utils.prepare_vectordb import get_vectorstore
+from app.utils.chatbot import chat
 
 class ChatApp:
     """
