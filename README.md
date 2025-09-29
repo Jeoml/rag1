@@ -2,10 +2,6 @@
 
 - A Retrieval-Augmented Generation (RAG) based chatbot built using **Gemini 2.0 Flash**, **ChromaDB**, and **Streamlit**. This application allows users to query documents with enhanced context-aware responses powered by large language models and semantic vector search.
 
-![snapshot of the webapp](image.png)
-
-# link - https://rag-based-chatbott.streamlit.app/
-
 # Features 🚀:
 
 - **Semantic Search** with ChromaDB
